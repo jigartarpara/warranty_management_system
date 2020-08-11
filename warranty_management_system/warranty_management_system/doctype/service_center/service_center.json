@@ -1,26 +1,35 @@
 {
+ "autoname": "field:service_center_name",
  "creation": "2020-08-08 10:46:03.982870",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "service_center_name",
-  "region"
+  "region",
+  "grade"
  ],
  "fields": [
   {
    "fieldname": "service_center_name",
    "fieldtype": "Data",
-   "label": "Service Center Name"
+   "label": "Service Center Name",
+   "unique": 1
   },
   {
    "fieldname": "region",
    "fieldtype": "Link",
    "label": "Region",
    "options": "Territory"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Select",
+   "label": "Grade",
+   "options": "Grade 1"
   }
  ],
- "modified": "2020-08-08 10:48:35.944588",
+ "modified": "2020-08-08 11:08:52.475522",
  "modified_by": "Administrator",
  "module": "Warranty Management System",
  "name": "Service Center",
