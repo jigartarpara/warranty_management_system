@@ -7,12 +7,16 @@
  "field_order": [
   "naming_series",
   "status",
+  "issue",
   "serial_no",
+  "warranty_expiry_date",
+  "maintenance_status",
   "service_type",
   "column_break_3",
   "posting_date",
   "customer_details_section",
   "customer",
+  "customer_email",
   "column_break_7",
   "customer_name",
   "item_details_section",
@@ -31,6 +35,7 @@
    "label": "Posting Date"
   },
   {
+   "fetch_from": "issue.serial_no",
    "fieldname": "serial_no",
    "fieldtype": "Link",
    "label": "Serial No",
@@ -100,10 +105,36 @@
    "fieldtype": "Select",
    "label": "Service Type",
    "options": "Replacement\nReturn"
+  },
+  {
+   "fieldname": "issue",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Issue",
+   "options": "Issue",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "serial_no.warranty_expiry_date",
+   "fieldname": "warranty_expiry_date",
+   "fieldtype": "Date",
+   "label": "Warranty Expiry Date"
+  },
+  {
+   "fetch_from": "serial_no.maintenance_status",
+   "fieldname": "maintenance_status",
+   "fieldtype": "Data",
+   "label": "Maintenance Status"
+  },
+  {
+   "fetch_from": "customer.email_id",
+   "fieldname": "customer_email",
+   "fieldtype": "Data",
+   "label": "Customer Email"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-08-08 16:07:43.405767",
+ "modified": "2020-08-12 20:19:20.094697",
  "modified_by": "Administrator",
  "module": "Warranty Management System",
  "name": "Service Order",

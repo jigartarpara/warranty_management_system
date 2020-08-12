@@ -7,7 +7,8 @@
  "field_order": [
   "service_center_name",
   "region",
-  "grade"
+  "grade",
+  "email"
  ],
  "fields": [
   {
@@ -27,9 +28,14 @@
    "fieldtype": "Select",
    "label": "Grade",
    "options": "Grade 1"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
   }
  ],
- "modified": "2020-08-08 11:08:52.475522",
+ "modified": "2020-08-12 20:41:40.588786",
  "modified_by": "Administrator",
  "module": "Warranty Management System",
  "name": "Service Center",
