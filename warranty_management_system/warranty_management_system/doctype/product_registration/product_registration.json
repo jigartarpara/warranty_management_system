@@ -51,6 +51,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Email ID",
+   "options": "Email",
    "reqd": 1
   },
   {
@@ -103,7 +104,7 @@
    "label": "Title"
   }
  ],
- "modified": "2020-08-11 18:12:43.547128",
+ "modified": "2020-08-14 10:37:36.040650",
  "modified_by": "Administrator",
  "module": "Warranty Management System",
  "name": "Product Registration",

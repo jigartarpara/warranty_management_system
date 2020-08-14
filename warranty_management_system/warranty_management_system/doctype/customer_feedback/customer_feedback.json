@@ -1,0 +1,52 @@
+{
+ "creation": "2020-08-13 15:54:54.232100",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "issue",
+  "que1",
+  "que2"
+ ],
+ "fields": [
+  {
+   "fieldname": "issue",
+   "fieldtype": "Link",
+   "label": "Issue",
+   "options": "Issue"
+  },
+  {
+   "fieldname": "que1",
+   "fieldtype": "Rating",
+   "label": "Satisfaction level of repair"
+  },
+  {
+   "fieldname": "que2",
+   "fieldtype": "Rating",
+   "label": "Satisfaction level of service center"
+  }
+ ],
+ "modified": "2020-08-13 16:24:36.661030",
+ "modified_by": "Administrator",
+ "module": "Warranty Management System",
+ "name": "Customer Feedback",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
